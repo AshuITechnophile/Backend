@@ -1,0 +1,35 @@
+{%extends 'parent.html'%}
+
+<!-- Write code for title -->
+{% block title%}
+<title >Contact Us</title>
+
+{% endblock title%}
+{% block main %}
+<main>
+
+    <div class="container mt 5">
+        <h1 class="text-center mb-4">Contact Us</h1>
+        <form class="border p-4">
+            <div class=" mb-4">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="r mb-4">
+                <label for="email">Email address</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class=" mb-4">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" name="phone">
+            </div>
+            <div class=" mb-4">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+    </div>
+
+</main>
+{% endblock main %}
